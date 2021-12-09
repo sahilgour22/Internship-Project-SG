@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.contain-content {
+		contain: content;
+	}
+
+	.loading-blue {
+		@apply border-gray-300 rounded-full animate-spin;
+		border-top-color: #2563eb;
+	}
+
+	.loading-white {
+		@apply border-transparent rounded-full animate-spin;
+		border-top-color: #fff;
+	}
+}
